@@ -45,7 +45,7 @@ body{
     padding: 10px 10%;
 }
 
-nav{
+.main_nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +56,74 @@ nav{
     width: 140px;
 }
 
-nav ul li{
+/* mobile menu styles */
+.mobile-nav {
+    display: none;
+    background: #333;
+    width: 250px;
+    height: 100vh;
+    z-index: 11111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-500px);
+}
+
+.mobile-nav.active {
+    transform: translateX(0);
+}
+
+.brand {
+    padding: 0 20px;
+    display:flex;
+    align-items: center;
+}
+
+.fa-xmark {
+    font-size: 30px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px
+}
+
+.mobile-nav ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.mobile-nav ul li a {
+    display: block;
+    padding: 10px 40px;
+    transition: background 0.7s linear;
+}
+
+.mobile-nav ul li a:hover {
+    background: #f5f5f5;
+    color:#000;
+}
+
+.overlay.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1111;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+/* mobile menu styles ends here  */
+
+
+.main_nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
@@ -70,7 +137,7 @@ nav ul li a{
     position: relative;
 }
 
-nav ul li a::after{
+.main_nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
@@ -81,7 +148,7 @@ nav ul li a::after{
     transition: 0.5ms;
 }
 
-nav ul li a:hover::after{
+.main_nav  ul li a:hover::after{
     width: 100%;
 }
 
@@ -379,7 +446,6 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: rgb(99, 8, 8);
-
 }
 
 .contact-right form{
@@ -396,7 +462,6 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
-
 }
 
 form .btn2{
@@ -404,6 +469,12 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
 
 .copyright{
@@ -452,7 +523,7 @@ form .btn2{
         font-size: 25px;
     }
 
-    nav ul {
+    .main_nav ul {
         background: #d4114f;
         position: fixed;
         top: 0;
@@ -464,8 +535,13 @@ form .btn2{
         z-index: 2;
         transition: right 0.5s;
     }
-    .fa-solid{
-        color: #f8f8f8
+    .fa-bars{
+        color: #fff;
+        font-weight: bold;
+        background: #000;
+        padding: 5px 8px;
+        border-radius: 5px;
+        cursor:pointer
     }
     nav ul li{
         display: block;
@@ -512,10 +588,11 @@ form .btn2{
         font-weight: bolder;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
+
+    /* mobile menu styles on small screen */
+    .mobile-nav {
+        display: block;
+    }
 }
 
-#msg{
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-}
+
