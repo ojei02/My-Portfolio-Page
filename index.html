@@ -9,12 +9,9 @@
     <link rel="icon" href="images/k-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Oswald:wght@200&display=swap" rel="stylesheet">
-
-
 
     <script src="https://kit.fontawesome.com/a6388899e8.js" crossorigin="anonymous"></script>
 </head>
@@ -23,7 +20,7 @@
         <div id="container-child">
             <div id="header">
                 <div class="container">
-                    <nav>
+                    <nav class="main_nav">
                         <img src="images/logo.png" class="logo">
                         <ul id="sidemenu">
                             <li><a href="#header">Home</a></li>
@@ -31,16 +28,36 @@
                             <li><a href="#services">Services</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
                             <li><a href="#contact">Contact</a></li>
-                            <i class="fa-solid fa-xmark" id="fas" onclick="closemenu()"></i>
+                            <!-- <i class="fa-solid fa-xmark" id="fas" onclick="closemenu()"></i> -->
                         </ul>
-                        <i class="fa-solid fa-bars" id="fas" onclick="openmenu"></i>
+                        <i class="fa-solid fa-bars" id="fas"></i>
                     </nav>
+
+                    <!-- mobile navigation begins here  -->
+                    <nav class="mobile-nav">
+                        <div class="brand">
+                            <img src="images/logo.png" class="logo">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        
+                        <ul id="">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+
+
                     <div class="header-text">
                         <p>Cyber-G Developer</p>
                         <h1>Hi, I'm <span>Kelvin</span> <br> Ojei From Nigeria</h1>
                     </div>
                 </div>
             </div>
+
+            <div class="overlay"></div>
         
             <!--------about--------->
             
@@ -212,63 +229,9 @@
            </div>
         
         </div>
-        
-        
-        
-        
-        <script>
-            const tablinks = document.getElementsByClassName("tab-links");
-            const tabcontents = document.getElementsByClassName("tab-contents");
-        
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        
-        </script>   
-       
-
-        <script>
-           const sideMenu = document.getElementById("sidemenu");
-           
-           function openmenu(){
-            sideMenu.style.right = "200";
-           } 
-           function closemenu() {
-            sideMenu.style.left = "500";
-           }
-           
-
-        </script>
-        
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxqqoY0P0PpPTHlR73pipWMVNPqLBL80BtUvHxktKU2AAjPzJS5RGlTSk_sp3RSnjHi1w/exec'
-            const form = document.forms['submit-to-google-sheet']
-
-            const msg = document.getElementById("msg")
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message Sent Successfully"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-
         </div>
     </div>
+      <script src="scripts/main.js"></script>
 </body>
 </html>
 
