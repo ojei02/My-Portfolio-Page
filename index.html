@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/k-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+
+
+    <script src="https://kit.fontawesome.com/a6388899e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container-parent">
+        <div id="container-child">
+            <div id="header">
+                <div class="container">
+                    <nav>
+                        <img src="images/logo.png" class="logo">
+                        <ul id="sidemenu">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fa-solid fa-xmark" id="fas" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" id="fas" onclick="openmenu"></i>
+                    </nav>
+                    <div class="header-text">
+                        <p>Cyber-G Developer</p>
+                        <h1>Hi, I'm <span>Kelvin</span> <br> Ojei From Nigeria</h1>
+                    </div>
+                </div>
+            </div>
+        
+            <!--------about--------->
+            
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/re-one.jpg" class="re-one">
+                            <img src="images/layers-2.jpg" class="layers-2">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>I am a Software Engineer skill with some knowlegde on front-end Developemnt, I'm usually curious and i really like to find out the why of things. Im able to build functional web applications and easilly convert Web Design into perfect responsive web pages.I learn fast and adapt to a new technology quickly
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links  active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+        
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>BDSP</span><br>Business Coach with Enterprise Development Centre (EDC)Lagos.</li>
+                                    <li><span>Web Development</span><br>Converting any UI/UX Design into Real and Advace Web Application</li>
+                                    <li><span>Node.JS</span><br>back-end JavaScript runtime environment</li>
+                                    <li><span>Git and Git-Hub</span><br>Pushing Code to a Repository</li>
+                                    <li><span>HTML5</span><br>Building Blocks of Web Pages</li>
+                                    <li><span>jQuery UI</span><br>A Library that you can use to build highly interactive web</li>
+                                </ul>
+                            </div>
+        
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Currently</span><br>Head of Department ICT at Delta State Vocational Education Centre</li>
+                                    <li><span>2019 - Till-Date </span><br>Front Desk Officer at Delta State MDAs.</li>
+                                    <li><span>2018 - 2019</span><br>Member Delta State ICT Curriculum Development Committee </li>
+                                    <li><span>2016 - 2017</span><br>Internship at Artfiled Comupters</li>
+                                    <li><span>2022</span><br>Training at Delta State ICT Youth Empowerment Programme (YEP)</li>
+                                </ul>
+                            </div>
+        
+        
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2018</span><br>NYSC Exception Letter</li>
+        
+                                    <li><span>2013 - 2017</span><br>Bsc. Accounting, National Open University of Nigeria. (Abuja).</li>
+
+
+                                    <li><span>2016</span><br>Microsoft Certifield Software Developer (MCSD).</li>
+        
+                                    <li><span>1997 - 2004</span><br>High School, West African Senior Secondary Certificate Examination [WASSCE]. Crystal College, Benin City, Edo State.</li>
+
+
+                                    <li><span>2008 - 2009</span><br>Diploma in ICT, GOLDEN TECH ICT HUB. Benin City, Edo State.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        <!-------------------SERVICES ---------->
+        
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates earum dicta, consectetur quae quisquam repellat quidem eligendi, placeat laudantium tempore ullam corporis commodi similique harum odio ad numquam dolor eum.</p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
+        
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates earum dicta, consectetur quae quisquam repellat quidem eligendi, placeat laudantium tempore ullam corporis commodi similique harum odio ad numquam dolor eum.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+        
+        
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates earum dicta, consectetur quae quisquam repellat quidem eligendi, placeat laudantium tempore ullam corporis commodi similique harum odio ad numquam dolor eum.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        <!-------------------portfilio ---------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work<h1/>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/work-1.png">
+                            <div class="layer">
+                                <h3>Social Media App</h3>
+                                <p>The app connects you to the talented people around the world. Download it from play Google store</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="work">
+                            <img src="images/work-2.png">
+                            <div class="layer">
+                                <h3>Todo List</h3>
+                                <p>The app connects you to the talented people around the world. Download it from play Google store</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+        
+        
+                        <div class="work">
+                            <img src="images/work-3.png">
+                            <div class="layer">
+                                <h3>Newsletter Signup</h3>
+                                <p>The app connects you to the talented people around the world. Download it from play Google store</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        
+        <!------------CONTACT PAGE----->
+        
+        <div id="contact">
+           <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> ojeikelvin@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +234 706-550-4523</p>
+                    <div class="social-icons">
+                        <a href="ken.ojei@facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="www.twitter.com/kelvin_ojei"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/ojei-kelvin-8b240a238"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/ojei-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+        
+                        <input type="email" name="Email" placeholder="Your Email" required>
+        
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+           </div>
+           <div class="copyright">
+                <p>&copy Copyright <i class="fas fa-heart"></i> CyberGlobe-Dev 2022   </p>
+           </div>
+        
+        </div>
+        
+        
+        
+        
+        <script>
+            const tablinks = document.getElementsByClassName("tab-links");
+            const tabcontents = document.getElementsByClassName("tab-contents");
+        
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        
+        </script>   
+       
+
+        <script>
+           const sideMenu = document.getElementById("sidemenu");
+           
+           function openmenu(){
+            sideMenu.style.right = "200";
+           } 
+           function closemenu() {
+            sideMenu.style.left = "500";
+           }
+           
+
+        </script>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxqqoY0P0PpPTHlR73pipWMVNPqLBL80BtUvHxktKU2AAjPzJS5RGlTSk_sp3RSnjHi1w/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+    
+     
+       
